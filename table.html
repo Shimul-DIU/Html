@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .Table1,.Table_row,.Table_col,.table_data{
+            border:1px solid black;
+            border-collapse: collapse;
+        }
+        .table_data,.Table_col{
+            padding: 20px;
+        }
+        
+           table, th,td{
+                border: 1px solid black;
+                border-collapse: collapse;
+               
+            }
+            th,td{
+                padding: 20px;
+            }
+        
+    </style>
+</head>
+<body>
+    <table class="Table1">
+        <tr class="Table_row">
+            <th class="Table_col" colspan="2">A</th>
+            <th class="Table_col">B</th>
+            <th class="Table_col">C</th>
+        </tr>
+        <tr class="Table_row">
+            <td class="table_data"rowspan="3">E</td>
+            <td class="table_data">F</td>
+            <td class="table_data">G</td>
+            <td class="table_data">H</td>
+            
+        </tr>
+        <tr class="Table_row">
+            <td class="table_data" colspan="3">J</td>
+        </tr>
+        
+        <tr class="Table_row">
+            <td class="table_data">N</td>
+            <td class="table_data"colspan="2">O</td>
+        </tr>
+    </table>
+    <br>
+    <table>
+        
+            <tr>
+                <th rowspan="2"></th>
+                <th colspan="2">Average</th>
+                <th rowspan="2">Red Eyes</th>
+            </tr>
+            <tr>
+                <td>Height</td>
+                <td>Wigth</td>
+               </tr>
+            <tr>
+                <td>111</td>
+                <td>2</td>
+                <td>00.3</td>
+                <td>40%</td>
+            </tr>
+            <tr>
+                <td>111</td>
+                <td>2</td>
+                <td>00.3</td>
+                <td>40%</td>
+            </tr>
+       
+    </table>
+</body>
+</html>
