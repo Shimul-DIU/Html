@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" class="">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dark Mode Example</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="transition-colors duration-300">
+
+  <!-- Header -->
+  <header class="bg-gray-200 dark:bg-gray-800 text-gray-900 dark:text-gray-100 p-6 flex justify-between items-center">
+    <h1 class="text-2xl font-bold">My Website</h1>
+    <button id="toggle" class="px-4 py-2 bg-gray-300 dark:bg-gray-700 rounded">
+      Toggle Dark Mode
+    </button>
+  </header>
+
+  <!-- Main Content -->
+  <main class="p-6">
+    <section class="mb-6 bg-white dark:bg-gray-900 dark:text-white p-6 rounded shadow">
+      <h2 class="text-xl font-semibold mb-2">About Us</h2>
+      <p>Welcome! This page shows Dark Mode with Tailwind CSS.</p>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-gray-200 dark:bg-gray-800 text-gray-900 dark:text-gray-100 p-6 text-center">
+    &copy; 2025 My Website
+  </footer>
+
+  <!-- JS for Dark Mode -->
+  <script>
+    const toggle = document.getElementById('toggle');
+
+    // Load saved theme
+    if (localStorage.getItem('theme') === 'dark') {
+      document.documentElement.classList.add('dark');
+    }
+
+    toggle.addEventListener('click', () => {
+      document.documentElement.classList.toggle('dark');
+
+      if (document.documentElement.classList.contains('dark')) {
+        localStorage.setItem('theme', 'dark');
+      } else {
+        localStorage.setItem('theme', 'light');
+      }
+    });
+  </script>
+
+</body>
+</html>
