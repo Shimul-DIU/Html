@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        .Table1,.Table_row,.Table_col,.table_data{
+        /* .Table1,.Table_row,.Table_col,.table_data{
             border:1px solid black;
             border-collapse: collapse;
         }
@@ -21,11 +21,15 @@
             th,td{
                 padding: 20px;
             }
-        
+         */
+         th,td{
+            padding: 10px;
+            border: 1px solid black;
+         }
     </style>
 </head>
 <body>
-    <table class="Table1">
+   <!--  <table class="Table1">
         <tr class="Table_row">
             <th class="Table_col" colspan="2">A</th>
             <th class="Table_col">B</th>
@@ -72,6 +76,60 @@
                 <td>40%</td>
             </tr>
        
+    </table> -->
+    <table>
+       <thead>
+            <tr>
+            <th rowspan="3">day</th>
+            <th colspan="3">seminar</th>
+        </tr>
+        <tr>
+            <th colspan="2">schedule</th>
+            <th rowspan="2">topic</th>
+        </tr>
+        <tr>
+            <th>begin</th>
+            <th>end</th>
+        </tr>
+     </thead>
+        
+      <tbody>
+        <tr>
+            <td rowspan="2">monday</td>
+            <td rowspan="2">8:00 am</td>
+            <td rowspan="2">5:00 pm </td>
+            <td >introduction to xml</td>
+        </tr>
+        <tr>
+            <td>validity dtd and relaz ng</td>
+        </tr>
+        <tr>
+            <td rowspan="4">
+                tuesday
+            </td>
+            <td>8 am</td>
+            <td>11 am</td>
+            <td rowspan="2">xpath</td>
+        </tr>
+        <tr>
+            <td rowspan="2">11 am</td>
+            <td rowspan="2">2 pm</td>
+        </tr>
+        <tr>
+            <td rowspan="2">xsl transformation</td>
+            
+        </tr>
+        <tr>
+            <td>2:pm</td>
+            <td>5:pm</td>
+        </tr>
+        <tr>
+            <td>wednesday</td>
+            <td>8 am</td>
+            <td>12 pm</td>
+            <td>xsl formatng object</td>
+        </tr>
+      </tbody> 
     </table>
 </body>
 </html>
